@@ -1,0 +1,15 @@
+# YOLOv8 Dataset Configuration
+# Smart Parking Violation Detection
+# AIRI Team PITB AI Internship Task 1
+
+path: /content/drive/MyDrive/cv_parking_violation/dataset
+train: images/train
+val: images/val
+test: images/test
+
+# Classes mapping
+names:
+  0: car
+  1: motorcycle
+  2: no_parking_sign
+  3: roadside_parking

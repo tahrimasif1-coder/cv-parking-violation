@@ -1,0 +1,5 @@
+Image,Actual Object,Model Prediction,Error Type,Possible Reason,Suggested Improvement
+test_img_01.jpg,car,None / Background,False Negative,Model trained on only 12 images; confidence threshold 0.25 not reached,Expand training dataset to 300+ images
+test_img_02.jpg,motorcycle,None / Background,False Negative,Model trained on only 12 images; small object scale and lighting,Incorporate multi-scale training (--imgsz 800)
+test_img_03.jpg,no_parking_sign,None / Background,False Negative,Model trained on only 12 images; sign distance and small feature size,Apply Albumentations Mosaic & HSV augmentation
+test_img_04.jpg,roadside_parking,None / Background,False Negative,Model trained on only 12 images; roadside curb vehicle occlusion,Disambiguate roadside parking annotation SOP
